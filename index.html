@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte de la Tunisie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lang-fr">
+    <button class="language-toggle" onclick="toggleLanguage()">FR/EN</button>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+        <!-- Barre de navigation latérale gauche -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tourisme.html">Tourisme</a></li>
+                <li><a href="cuisine.html">Cuisine</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section de contenu principal -->
+        <main>
+            <header>
+                <h1 class="fr">Bienvenue en Tunisie</h1>
+                <h1 class="en">Welcome to Tunisia</h1>
+            </header>
+            <div class="carousel">
+                <img src="/imgs/histoire1.jpg" alt="image1">
+                <img src="/imgs/ville1.jpg" alt="image2">
+                <img src="/imgs/desert.jpg" alt="image3">
+                <img src="/imgs/plage1.jpg" alt="image4">
+            </div>
+            <section>
+                <h2 class="fr">Explorez la beauté de la Tunisie</h2>
+                <h2 class="en">Explore the beauty of Tunisia</h2>
+                <p class="fr">Découvrez la richesse de la Tunisie, de ses plages méditerranéennes à ses vastes déserts.
+                    La Tunisie
+                    est un mélange unique d'histoire, de culture et de paysages incroyables.</p>
+                <p class="en">Discover Tunisia's richness, from its Mediterranean beaches to its vast deserts. Tunisia
+                    is a unique blend of history, culture, and incredible landscapes.</p>
+
+            </section>
+            <footer>
+                <p class="fr">© 2024 - Découverte de la Tunisie</p>
+                <p class="en">© 2024 - Discover Tunisia</p>
+
+                <p class="fr">Contactez-nous à <a href="mailto:admin@decouvertetunisie.com">admin@decouvertetunisie.com</a></p>
+                <p class="en">Contact us at <a href="mailto:admin@decouvertetunisie.com">admin@decouvertetunisie.com</a></p>
+            </footer>
+        </main>
+    </div>
+    <script>
+        function toggleLanguage() {
+            document.body.classList.toggle('lang-en');
+            document.body.classList.toggle('lang-fr');
+        }
+    </script>
+
+</body>
+
+</html>
